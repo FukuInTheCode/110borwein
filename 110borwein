@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 import sys
+from src.error_handling import error_handling
 
 
 def main(argv: list[str]) -> int:
-    return 84
+    return error_handling(argv)
 
 
 if __name__ == '__main__':
