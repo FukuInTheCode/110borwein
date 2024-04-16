@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 import sys
+from src.error_handling import error_handling
 from src.help.display_help import display_help
 
 
 def main(argv: list[str]) -> int:
     if argv[1] == "-h":
         return display_help()
-    return 84
+    return error_handling(argv)
 
 
 if __name__ == '__main__':
