@@ -5,6 +5,8 @@ from src.help.display_help import display_help
 
 
 def main(argv: list[str]) -> int:
+    if len(argv) != 2:
+        return 84
     if argv[1] == "-h":
         return display_help()
     return error_handling(argv)
