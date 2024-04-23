@@ -1,5 +1,6 @@
 from src.get_midpoint import get_midpoint
 from src.get_trap import get_trap
+from src.get_simpson import get_simpson
 from src.calc.calc_diff import calc_diff
 from src.print.print_estimation import print_estimation
 
@@ -14,7 +15,7 @@ def estimate_area(n: int) -> int:
     diff_trapezoidal = calc_diff(trapezoidal)
     print_estimation(trapezoidal, diff_trapezoidal)
     print("\nSimpson:")
-    # simpson = get_simspon(n)
-    # diff_simpson = calc_diff(simpson)
-    # print_estimation(simpson, diff_simpson)
+    simpson = get_simpson(n)
+    diff_simpson = calc_diff(simpson)
+    print_estimation(simpson, diff_simpson)
     return 0
